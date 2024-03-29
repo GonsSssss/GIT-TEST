@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>콘텐츠 조작</title>
+  </head>
+  <body>
+    <p id="title">Hello, <span style="display: none">Javascript!</span></p>
+    <script>
+      // span 태그의 javascript! 는 style="display: none; 의 적용으로 인해 화면에 나오지 않는다.
+      document.getElementById("title").textContent; // Hello, Javascript!  요소의 모든 텍스트에 접근
+      document.getElementById("title").innerText; // Hello, 웹 브라우저에 표시되는 텍스트만 접근
+      document.getElementById("title").innerHTML; // Hello, <span style="display: none;">Javascript!</span>
+
+      console.log(document.getElementById("title").textContent);
+      console.log(document.getElementById("title").innerText);
+      console.log(document.getElementById("title").innerHTML);
+    </script>
+  </body>
+</html>

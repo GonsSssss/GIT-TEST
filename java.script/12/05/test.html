@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input</title>
+  </head>
+  <body>
+    <form name="frm">
+      <input type="text" name="id" />
+      <input type="password" name="pw" />
+      <!-- 제출 버튼 -->
+      <input type="button" value="제출" onclick="submitForm()" />
+    </form>
+    <script>
+      function submitForm() {
+        var id1 = document.frm.id.value;
+        var pass1 = document.frm.pw.value;
+        console.log(id1);
+        console.log(pass1);
+      }
+    </script>
+  </body>
+</html>
