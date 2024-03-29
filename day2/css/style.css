@@ -1,0 +1,64 @@
+/*  색상 코드 
+2자리 숫자 단위로 붉은색, 녹색, 푸른색을 결정함 
+rgba 에서는 마지막 소수점 0~1 사이의 숫자로 투명도를 결정합니다.*/
+
+body {
+  background-color: rgba(46, 101, 184, 0.582);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* px = 픽셀 */
+/* border-radius 의 픽셀이 커질수록 모서리가 둥글게 된다. 
+경계선의 형태는 몇 종류가 존재한다.
+보통은 solid double dotted dashed 사용됨, 이 밖에도 더 있다. 
+경계선의 네 변을 전부 다르게 지정할 수 있습니다.
+컨텐츠 간의 여백인 margin은 margin : 위아래, 좌우*/
+
+/*  박스 크기의 두가지 유형 : content-box & border-box 
+    content-box : padding과 border는 width 에 포함되지 않습니다.
+    border-box - padding과 border는 width에 포함됩니다.
+    초기상태는 content-box로 지정되어 있으므로 사이즈 지정에 주의
+    여백과 경계선의 너비를 포함해서 크기를 정했냐 아니냐 확인 필요
+    
+    block 속성의 가운데 정렬은 좌우에 여백이 있어야 한다.
+    width로 폭을 지정해서 좌우 크기를 줄이면 움직일 여지가 생긴다.
+    auito를 활용해서 화면 중앙으로 배치시킨다(좌우 자동으로 여백을 잡는다.)*/
+
+/* p 태그와 ul 태그 안의 텍스트와 이미지는 text-align : center 로 가운데 정렬 가능 */
+
+h1 {
+  font-size: 18px;
+  border-top: 3px double white;
+  border-bottom: 0.5px dotted white;
+  border-left: 0.5px dashed white;
+  border-right: 0.5px solid white;
+  border-radius: 20px;
+  /* margin 태그에 auto를 붙여 가운데에 위치시킨다. */
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+}
+/* css에서 여러태그를 동시에 지정 가능함 */
+p,
+ul {
+  text-align: center;
+  margin-bottom: 20px auto;
+}
+img {
+  border-radius: 50%;
+}
+/* block 속성 강제부여 */
+a {
+  background-color: rgb(247, 185, 185);
+  display: block;
+  padding: 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+ul {
+  width: 300px;
+  margin: 0 auto;
+}
+li {
+  margin-bottom: 20px;
+}

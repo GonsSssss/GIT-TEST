@@ -1,0 +1,109 @@
+#hero {
+  height: 800px;
+  background-image: url(images/places/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+  width: 900px;
+  background-color: black;
+  box-shadow: 2px 4px 8px grey;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+#hero-content p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 12, 0.966);
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px grey;
+}
+
+#hero-content a:hover {
+  background-color: rgb(236, 236, 0);
+}
+
+#highlights {
+  padding: 24px;
+  background-color: linear-gradient(
+    (0deg),
+    rgb(255, 255, 12),
+    rgb(159, 211, 224)
+  );
+}
+
+#highlights h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: grey;
+  margin: 24px 0;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.destination {
+  margin: 0 20px;
+  text-transform: uppercase;
+  width: 25%;
+}
+.destination p {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  color: grey;
+}
+
+.destination strong {
+  color: aqua;
+}
+
+/* object-fit 속성은 이미지나 비디오 요소의 크기를 조절하는 방법을 지정한다.
+cover 값은 요소의 가로와 세로를 채우면서도 가로 세로 비율을 유지하도록
+이미지, 비디오를 조절한다.
+
+이미지나 비디오가 부모 요소에 딱 맞게 표시되지 않을 경우
+cover 값은 해당 요소를 늘려서 가로, 세로중 하나의 차원이 부모 요소에
+맞게 만들고 다른 차원은 넘치는 부분이 잘리게 한다.
+따라서 cover값은 부모 요소에 곽 차도록 대상을 확장하면서 비율도 유지하며,
+남은 부분은 자르는 효과이다.
+사진이나 비디오의 일부가 잘리는만큼 cover 사용 후 원하는 사진 파트가 
+화면에 나오게 따로  사진의 표시 위치를 지정하는게 좋다.*/
+.destination img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.596);
+}

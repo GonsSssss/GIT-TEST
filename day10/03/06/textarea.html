@@ -1,0 +1,225 @@
+Advanced form styling (en-US) UI pseudo-classes (en-US) Client-side form
+validation (en-US) Sending form data (en-US) 고급 form 접근성 - 모두를 위한 웹
+만들기 접근성 안내서 Performance — Making websites fast and responsive
+Performance guides MathML — MathML을 이용해 수학 쓰기 MathML 첫 걸음 Games —
+Developing games for the web Guides and tutorials 도구과 테스트 클라이언트
+사이드 웹 개발 도구 클라이언트 사이드 프레임워크 소개 React Ember Vue Svelte
+Angular Git과 GitHub 크로스 브라우저 테스팅 서버 사이드 웹사이트 프로그래밍 첫
+걸음 Django 웹 프레임워크 (Python) Express 웹 프레임워크 (Node.js/JavaScript)
+추가 자료 자주 묻는 질문 HTML 폼 구성 방법 HTML폼을 만들떄 구조화 하는것은
+중요한 것이다. 이것은 두가지 이유로 중요하다. 폼이 사용 할수 있다는 것을
+보장하고 접근성도 늘릴수 있기 떄문이다.(즉 장애인들도 쉽게 사용할 수 있다.) HTML
+폼의 접근성은 중요한 점이고 어떻게 폼 접근성을 높일 수 있는지 볼것이다. 이전
+Overview: Forms 다음 기본 사항을 다룬 후에는 이제 폼의 다른 부분에 구조와 의미를
+부여하는 데 사용되는 요소들을 좀 더 자세히 살펴보겠습니다. 전제 조건: 기본적인
+컴퓨터 사용능력과 HTML에 대한 기본적인 이해. 목표: HTML 폼을 구조화하고 의미를
+부여하여 사용가능하고 접근성있는 폼을 만드는 방법을 이해합니다. 폼의 유연성은
+폼을 HTML의 가장 복잡한 구조 중 하나로 만듭니다. 전용 요소들과 특성들로 모든
+종류의 기본적인 폼을 만들 수 있습니다. HTML 폼을 만들때 올바른 구조를
+사용하게되면 사용성과 접근성을 확보 할 수 있습니다.
+
+<form>
+  요소
+  <form>
+    요소는 폼을 형식적으로 정의하는 폼의 동작 방식을 결정하는 속성들을
+    포함합니다. HTML폼을 생성할떄마다 반드시 이 요소로 시작하고 모든 내용을
+    내부에 중첩해야 합니다. 많은 보조 기술이나 브라우저 플러그인이
+    <form>
+      요소를 발견하고 사용하기 쉽게 만들기 위해 특별한 기능을 제공 할 수
+      있습니다. 우리는 저번 문서에서 이미 이 내용을 다루었습니다. 경고: 폼을
+      다른 폼으로 중첩하는 것은 엄격하게 제한되어 있습니다. 그렇게 하면 사용자가
+      사용하는 브라우저에 따라 예측할 수 없는 방식으로 작동하므로 좋은 방법이
+      아닙니다. 언제든지
+      <form>
+        요소 바깥에서 폼 컨트롤을 사용할 수 있습니다. 이럴 경우 기본적으로
+        컨트롤은 form (en-US) 특성을 사용하여 연결해주지 않는한 어떤 폼과도
+        관련이 없습니다. 이것은 컨트롤이 폼 요소 내부에 중첩되어있지 않더라도
+        명시적으로 컨트롤을 명시적으로 바인딩할 수 있도록 하기위해 도입됐습니다.
+        다음으로 폼 내부의 중첩되어있는 구조요소에 대해 다루겠습니다.
+
+        <fieldset>
+          와
+          <legend>
+            요소
+            <fieldset>
+              요소는 같은 목적을 가진 위젯들을 편리하게 그룹화 하는 방법입니다.
+              <fieldset>
+                에 레이블을 붙이려면
+                <fieldset>
+                  태그 바로 아래에
+                  <legend>
+                    요소를 포함하면 됩니다.
+                    <legend>
+                      의 텍스트 컨텐츠는
+                      <fieldset>
+                        요소의 목적을 형식적으로 설명합니다. 많은 보조 기술들이
+                        <legend>
+                          요소를 해당
+                          <fieldset>
+                            요소내의 각 컨트롤의 레이블의 일부인것 처럼
+                            사용합니다. 예를 들어 Jaws 와 NVDA 같은 스크린
+                            리더는 각 컨트롤의 라벨을 읽기전에 legend를 읽을
+                            것입니다. 아래 작은 예제가 있습니다. HTML Copy to
+                            Clipboard
+                            <form>
+                              <fieldset>
+                                <legend>Fruit juice size</legend>
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size_1"
+                                    value="small"
+                                  />
+                                  <label for="size_1">Small</label>
+                                </p>
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size_2"
+                                    value="medium"
+                                  />
+                                  <label for="size_2">Medium</label>
+                                </p>
+                                <p>
+                                  <input
+                                    type="radio"
+                                    name="size"
+                                    id="size_3"
+                                    value="large"
+                                  />
+                                  <label for="size_3">Large</label>
+                                </p>
+                              </fieldset>
+                            </form>
+                            참고: 예제는 여기서 찾을수 있습니다.
+                            fieldset-legend.html (see it live also). 위 예제를
+                            스크린 리더가 읽을때 Fruit juice size small을 먼저
+                            읽고 Fruit juice size medium을 읽은 다음 마지막으로
+                            Fruit juice size large을 읽을 것입니다. 이
+                            예제에서의 사용 사례는 가장 중요한것 중 하나입니다.
+                            라디오 버튼의 셋트는 항상
+                            <fieldset>
+                              요소 내부에 중첩해야 합니다. 다르게 사용하는
+                              사례도 있으며, 흔히
+                              <fieldset>
+                                요소는 폼의 구획을 나누는데도 사용 할 수
+                                있습니다. 이상적으로는 긴 폼을 여러 페이지에
+                                걸쳐 나누는 것이 좋지만, 폼이 길어지고 단일
+                                페이지에 위치해야 하는 경우, 서로 다른 관련
+                                섹션을 각각 fieldset 내에 넣는것은 사용성을 향상
+                                시킵니다. 보조기술에 대한 영향력으로 인해,
+                                <fieldset>
+                                  요소는 접근성 있는 폼을 구축하기위한 주요 요소
+                                  중 하나입니다. 그러나 이를 남용하지 않는것은
+                                  여러분의 책임입니다. 가능하다면 폼을 작성할
+                                  때마다 스크린리더가 어떻게 해석하는지
+                                  들어보는것 (en-US)이 좋습니다. 스크린리더가
+                                  읽는것이 이상하게 들린다면 폼 구조를
+                                  개선해보세요.
+
+                                  <label>
+                                    요소 이전 글에서 볼 수 있듯이
+                                    <label>
+                                      요소는 HTML 폼 위젯에 대한 레이블을
+                                      정의하는 공식적인 방법입니다. 올바르게
+                                      구현되면 스크린 리더는 폼 요소의 레이블과
+                                      관련된 지시사항을 읽어주며 시각 장애인
+                                      사용자 뿐만 아니라 시각적으로 볼 수 있는
+                                      사용자에게도 유용합니다. 이전 글에서 본
+                                      것처럼, 다음과 같은 예시를 살펴보겠습니다.
+                                      HTML Copy to Clipboard
+                                      <label for="name">Name:</label>
+                                      <input
+                                        type="text"
+                                        id="name"
+                                        name="user_name"
+                                      />
+                                      <label>
+                                        요소가 <input />요소와 for 속성을 통해
+                                        (<input /> 요소의 id 속성을 사용)
+                                        올바르게 연결되어 있을 때 스크린 리더는
+                                        "이름, 텍스트 수정"과 같은 내용을
+                                        읽어줍니다. 다른 방법으로도 폼 컨트롤과
+                                        레이블을 연결할 수 있습니다. 폼 컨트롤을
+                                        <label>
+                                          내부에 중첩하여 암묵적으로 연결할 수
+                                          있습니다. HTML Copy to Clipboard
+                                          <label for="name">
+                                            Name:
+                                            <input
+                                              type="text"
+                                              id="name"
+                                              name="user_name"
+                                            />
+                                          </label>
+                                          심지어 이러한 경우에도, 레이블과
+                                          위젯간의 관계를 보조기술이 이해할 수
+                                          있도록 for 속성을 설정하는 것이 가장
+                                          좋은 방법으로 권장됩니다. 레이블이
+                                          없거나 폼 컨트롤이 암묵적으로나
+                                          명시적으로 레이블과 연결되지 않은
+                                          경우, 스크린 리더는 "텍스트 수정
+                                          공백"과 같은 내용을 읽어주는데, 이는
+                                          전혀 도움이 되지 않습니다. 레이블도
+                                          클릭할 수 있습니다! 레이블을 올바르게
+                                          설정했을때의 또다른 장점은 해당 위젯을
+                                          활성화 하기위해 레이블을 클릭하거나
+                                          탭할 수 있다는 것입니다. 이는
+                                          텍스트입력과 같은 컨트롤에 유용합니다.
+                                          텍스트 입력의 경우 레이블 뿐만 아니라
+                                          입력란을 클릭하여 포커스를 활성화할 수
+                                          있지만, 라디오버튼과 체크박스 같은
+                                          경우애는 특히 유용합니다. 이러한
+                                          컨트롤의 클릭 영역은 매우 작을 수
+                                          있으므로 활성화하기 쉽도록 만드는 것이
+                                          유용합니다. 예를 들어 아래 예시의 "I
+                                          like cherry"레이블 텍스트를 클릭하면
+                                          taste_cherry 체크박스의 선택 상태가
+                                          토글됩니다. HTML Copy to Clipboard
+                                          <form>
+                                            <p>
+                                              <input
+                                                type="checkbox"
+                                                id="taste_1"
+                                                name="taste_cherry"
+                                                value="cherry"
+                                              />
+                                              <label for="taste_1"
+                                                >I like cherry</label
+                                              >
+                                            </p>
+                                            <p>
+                                              <input
+                                                type="checkbox"
+                                                id="taste_2"
+                                                name="taste_banana"
+                                                value="banana"
+                                              />
+                                              <label for="taste_2"
+                                                >I like banana</label
+                                              >
+                                            </p>
+                                          </form></label
+                                        ></label
+                                      ></label
+                                    ></label
+                                  >
+                                </fieldset>
+                              </fieldset>
+                            </fieldset>
+                          </fieldset>
+                        </legend>
+                      </fieldset>
+                    </legend>
+                  </legend>
+                </fieldset>
+              </fieldset>
+            </fieldset>
+          </legend>
+        </fieldset>
+      </form>
+    </form>
+  </form>
+</form>

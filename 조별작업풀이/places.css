@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(30deg, rgb(151, 151, 151), rgb(95, 95, 95));
+  color: rgb(61, 61, 61);
+}
+
+#page-logo a {
+  color: skyblue;
+}
+
+header {
+  position: static;
+}
+
+header a {
+  color: skyblue;
+}
+
+header nav a:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+main ul {
+  width: 1200px;
+  margin: 0 auto 48px auto;
+  display: grid;
+  /* 1fr 1fr; 이후에 다른 말이 없다면 50% 50% 와 큰 차이는 없다.
+  그런데 1fr의 엄밀한 의미는 절대 비율이 아닌 전체에서 차지하느 ㄴ상대 비율이다.
+  예를 들어 100px 100px 1fr 1fr 이렇게 세로가 4파트로 나뉘면 1fr은
+  전체 비율에서 200px를 빼고 남은 넓이에서 1/(1+1) 반으로 나눈다는 의미가 된다. */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
+/*   grid-column: 1 / span 2;  3번재 li 태그에 한해서 1번 라인에서
+2칸을 차지하게 해달라는 뜻이다. */
+li:nth-of-type(3) {
+  grid-column: 1 / span 2;
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-content h2 {
+  margin: 0;
+}
+
+.action {
+  text-align: right;
+}
+
+.action a {
+  text-decoration: none;
+  padding: 6px;
+  color: skyblue;
+  border-radius: 15px;
+}
+
+.action a:hover {
+  background-color: skyblue;
+}
+
+div {
+  width: 100%;
+}
