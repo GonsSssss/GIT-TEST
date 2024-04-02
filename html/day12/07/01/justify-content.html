@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content</title>
+    <link rel="stylesheet" href="flex-basic.css" />
+    <style>
+      /* flex-direction: row-reverse; - 요소의 순서를 반대로 하여 끝부터 나열 */
+      /* justify-conent:flex-end; - 요소들을 끝방향으로 정렬 
+         justify-conent: center; - 요소를 가운데 정렬
+         justify-conent: space-between; - 요소들의 첫번째와 끝번째를 가장자리에
+                                          두고 남은 요소들을 균일한 간격으로 나열한다.
+         justify-conent: space-around; - 요소들의 간격을 균일하게 배치하고
+                                          이때의 간격의 반만큼 첫 요소와 끝 요소를
+                                          가장자리에서 띄운다
+         justify-conent: space-evenly; - 요소들의 사이 간격이 모두 동일하게 배치*/
+      .flex-container {
+        display: flex;
+        justify-content: space-around; /* flex-end, center, space-between, 
+                                          space-around, space-evenly */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">item-1</div>
+      <div class="flex-item">item-2</div>
+      <div class="flex-item">item-3</div>
+      <div class="flex-item">item-4</div>
+    </div>
+  </body>
+</html>

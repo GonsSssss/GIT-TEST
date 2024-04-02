@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMATION TEST</title>
+    <style>
+      div {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(115, 115, 255, 0.089);
+        animation-name: colch;
+
+        animation-duration: 10s;
+        position: relative;
+      }
+
+      @keyframes colch {
+        0% {
+          background-color: rgba(0, 25, 248, 0.473);
+        }
+        33% {
+          background-color: rgba(137, 43, 226, 0.712);
+        }
+        66% {
+          background-color: grey;
+        }
+        100% {
+          background-color: rgba(255, 228, 196, 0.74);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div><p>A</p></div>
+  </body>
+</html>
