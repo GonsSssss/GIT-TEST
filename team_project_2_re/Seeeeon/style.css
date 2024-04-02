@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* common */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+/* //common */
+
+/* title */
+/* //title */
+
+/* about */
+/* //about */
+
+/* features */
+/* //features */
+
+/* portfolio */
+/* //portfolio */
+
+/* contact */
+/* //contact */

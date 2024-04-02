@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* common */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+/* //common */
+.red-text {
+  color: red;
+  text-transform: uppercase;
+}
+/* title */
+/* //title */
+
+/* about */
+/* //about */
+
+/* features */
+/* //features */
+
+/* portfolio */
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-images img {
+  border: 1px solid grey;
+}
+
+/* //portfolio */
+
+/* contact */
+button {
+  background-color: orange;
+}
+/* //contact */
