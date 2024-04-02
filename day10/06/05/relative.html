@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>relative</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .red-box {
+        background-color: red;
+      }
+      .green-box {
+        background-color: green;
+        position: relative;
+        left: 100px;
+        /* top 속성 추가 */
+        /* top: 100px; */
+      }
+      .blue-box {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+  </body>
+</html>
+
+<!-- position 속성값 정리
+relative: 요소를 기본 흐름에 따라 배치하며, 좌표속성 사용가능
+absolute: 절대 좌표위치에 따라 배치 (부모요소 기준)
+fixed: 스크롤해도 지정된 위치에 고정 
+
+relative 요소 상세정리
+top: 위를 기준으로 좌표정리
+left: 왼쪽을 기준으로 좌표정리-->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 폼 예시</title>
+</head>
+<body>
+
+<h2>사용자 정보 입력</h2>
+
+<!-- 폼 시작 -->
+<form id="myForm">
+    <!-- 사용자로부터 이름 입력 받기 -->
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <!-- 사용자로부터 이메일 입력 받기 -->
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <!-- 제출 버튼 -->
+    <input type="button" value="제출" onclick="submitForm()">
+</form>
+<!-- 폼 종료 -->
+
+<script>
+    // JavaScript로 폼 데이터 처리 및 CSV 파일에 저장
+    function submitForm() {
+        // 사용자로부터 입력 받은 값을 가져오기
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+
+        // 데이터를 CSV 형식으로 변환
+        var csvContent = "data:text/csv;charset=utf-8,"
+            + "Name,Email\n"
+            + name + "," + email;
+
+        // 데이터를 Blob으로 변환
+        var blob = new Blob([csvContent], { type: 'text/csv' });
+
+        // CSV 파일 다운로드 링크 생성
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'user_data.csv';
+        a.textContent = 'Download CSV';
+
+        // HTML에 링크 추가 및 클릭
+        document.body.appendChild(a);
+        a.click();
+
+        // 링크 제거
+        document.body.removeChild(a);
+    }
+</script>
+
+</body>
+</html>
