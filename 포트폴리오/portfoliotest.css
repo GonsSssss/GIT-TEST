@@ -1,0 +1,18 @@
+.header nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 2rem;
+}
+
+.header nav ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+main {
+  display: inline-block;
+}
+
+.blackimg {
+  justify-content: right;
+}
