@@ -1,0 +1,28 @@
+.header nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 2rem;
+}
+
+.header nav ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main .main-title-container {
+  padding: 3rem;
+}
+
+.main .main-title-container .main-title {
+  font-size: 3.5rem;
+}
+
+.main .main-title-container .main-smalltitle {
+  font-size: 2rem;
+}
