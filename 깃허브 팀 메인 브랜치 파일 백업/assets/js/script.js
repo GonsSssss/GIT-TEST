@@ -1,5 +1,4 @@
 (function () {
-<<<<<<< HEAD
   const spanEl = document.querySelector("main h1 span");
   const txtArr = ["황운하", "김용환", "이선우", "김희곤", "김주영"];
   let indexTxt = 0;
@@ -92,7 +91,7 @@
     });
 
 })();
-=======
+(function () {
   let otSwiperSwiper = new Swiper(`.ourteam-imgbox .swiper`, {
     loop: true,
     autoplay: {
@@ -100,4 +99,3 @@
     },
   });
 })();
->>>>>>> dd

@@ -13,12 +13,9 @@ body {
   color: #25262b;
   background: #e4ece6;
 }
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
-=======
->>>>>>> dd
 
 img {
   max-width: 100%;
@@ -69,7 +66,6 @@ section:nth-child(2n) {
 }
 /* //common */
 
-<<<<<<< HEAD
 /* header */
 header {
   width: 100%;
@@ -288,7 +284,6 @@ nav ul li a:hover::before {
 /* // Team Avility */
 
 /* Team Portfolio */
-=======
 /* KV */
 
 /* //KV */
@@ -377,7 +372,6 @@ nav ul li a:hover::before {
 
 /* Team Portfolio */
 
->>>>>>> dd
 /* //Team Portfolio */
 
 /* footer */
