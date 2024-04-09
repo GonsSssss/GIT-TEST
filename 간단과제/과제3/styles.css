@@ -1,0 +1,94 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(188, 230, 255, 0.692);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(22, 112, 248);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+img {
+  width: 400px;
+}
+
+main {
+  color: rgb(255, 255, 255);
+  background-color: rgb(53, 103, 122);
+  border-radius: 10px;
+  padding: 35px;
+  margin: auto;
+  width: 800px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+main section ul {
+  font-size: 18px;
+  padding: 0px 0px 0px 50px;
+  line-height: 2em;
+}
+
+main section p a {
+  background-color: rgb(243, 204, 157);
+  border-radius: 8px;
+  padding: 2px 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 14px;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
+}
+
+.extra-important {
+  color: rgb(212, 212, 57);
+  border-color: rgb(212, 212, 57);
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer a {
+  background-color: rgb(255, 204, 138);
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+footer a:hover {
+  background-color: goldenrod;
+}
+
+a:hover,
+a:active {
+  /* a:active는 a링크를 클릭하는 동안  이라는 뜻이다. */
+  background-color: rgb(225, 228, 58);
+}
