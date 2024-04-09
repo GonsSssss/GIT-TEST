@@ -229,6 +229,83 @@ nav ul li a:hover::before {
 /* //KV */
 
 /* Our Team */
+/* Our Team */
+.ourteam-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourteam-textbox {
+  font-size: 24px;
+}
+.ourteam-text2 {
+  margin-top: 16px;
+}
+
+.ourteam-imgbox {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.ourteam-imgbox:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #29cfb0;
+  top: 20px;
+  right: 20px;
+  box-sizing: border-box;
+}
+
+.ourteam-member h3 {
+  font-size: 2.5rem;
+}
+
+.ourteam-face ul {
+  justify-content: space-around;
+  display: flex;
+}
+
+.ourteam-face ul li {
+  text-align: center;
+  /* position: relative; */
+}
+
+.member-face {
+  background-color: #b0d1c7;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.member-face p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.ourteam-face ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  background-color: rgba(87, 87, 87, 0.774);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 24px;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: all 0.3s;
+}
+
+.ourteam-face ul li:hover a {
+  transform: scale(1);
+}
+
+/* // Our Team */
 /* // Our Team */
 
 /* Team Avility */
@@ -284,6 +361,8 @@ nav ul li a:hover::before {
 /* // Team Avility */
 
 /* Team Portfolio */
+
+
 /* //Team Portfolio */
 
 /* footer */
