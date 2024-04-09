@@ -5,132 +5,131 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Team Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header>
-    <div>
-    <nav>
-      <ul>
-        <li><a href="#kv">Home</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#ability">Ability</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-    </nav>
-    </div>
-  </header>
+  <header></header>
   <main>
     <!-- KV -->
-    <section id="kv" class="section-kv">
+    <section class="kvsection">
       <div class="container">
-        <div class="kv-text-content">
-          <h1>나는 <span></span>입니다</h1>
-          <h2>우리는 EZEN Academy 1조입니다</h2>
-          <a href="#portfolio">View Portfolio</a>
-        </div>
-        <div class="kv-img-content">
-          <div class="kv-img-image">
-          <img id="images" src="assets/images/kv_image_1.png" alt="">          
-          </div>
-        </div>
+
       </div>
     </section>
-    <!-- // KV1 -->
+    <!-- // KV -->
 
     <!-- Our Team -->
-    <section id="team">
+    <section>
       <div class="container">
         <div class="title">
           <h2>Our Team</h2>
+        </div>
+        <div class="ourteam-cont">
+          <div class="ourteam-textbox">
+            <div>
+              이젠컴퓨터아카데미 인천캠퍼스<br>
+              AWS클라우드 활용 지능형 웹서비스 풀스택개발
+            </div>
+            <div class="ourteam-text2">
+              K-디지털 1팀의 팀 프로젝트 페이지입니다.
+            </div>
+          </div>
+          <div class="ourteam-imgbox">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/ezenimg1.png" alt="ezenacademy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ezenimg2.png" alt="ezenacademy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ezenimg3.png" alt="ezenacademy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ezenimg4.png" alt="ezenacademy">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ezenimg5.png" alt="ezenacademy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =========== -->
+        <div class="ourteam-member">
+          <div class="ourteam-membertitle">
+            <h3>Member</h3>
+          </div>
+          <div class="ourteam-face">
+            <ul>
+              <li>
+                <div class="member-face">
+                  <img src="assets/images/member2.png" alt="memberface">
+                  <p>김희곤</p>
+                </div>
+                <a href="#">개인 포트폴리오<br> 보기</a>
+              </li>
+              <li>
+                <div class="member-face">
+                  <img src="assets/images/member2.png" alt="memberface">
+                  <p>김희곤</p>
+                </div>
+                <a href="#">개인 포트폴리오<br> 보기</a>
+              </li>
+              <li>
+                <div class="member-face">
+                  <img src="assets/images/member2.png" alt="memberface">
+                  <p>김희곤</p>
+                </div>
+                <a href="#">개인 포트폴리오<br> 보기</a>
+              </li>
+              <li>
+                <div class="member-face">
+                  <img src="assets/images/member2.png" alt="memberface">
+                  <p>김희곤</p>
+                </div>
+                <a href="#">개인 포트폴리오<br> 보기</a>
+              </li>
+              <li>
+                <div class="member-face">
+                  <img src="assets/images/member2.png" alt="memberface">
+                  <p>김희곤</p>
+                </div>
+                <a href="#">개인 포트폴리오<br> 보기</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <!-- // Our Team -->
 
-      <!-- Team Avility -->
-      <section id= "ability" class="avility">
-        <div class="container">
-          <div class="title"><h2>Our TeamAvility</h2></div>
-            <ul class="avillity-inner">
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-html5"></i>
-                  <h4>HTML</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar1" data-pers="75">
-                  <span>75%</span></div>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <h4>CSS</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar2" data-pers="60">
-                  <span>60%</span></div>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-js"></i>
-                  <h4>Javascript</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar3" data-pers="40">
-                  <span>40%</span></div>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-react"></i>
-                  <h4>React</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar4" data-pers="70">
-                  <span>70%</span></div>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-java"></i>
-                  <h4>Java</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar5" data-pers="30">
-                  <span>30%</span></div>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <i class="fa-brands fa-git-alt"></i>
-                  <h4>Git</h4>
-                </div>
-                <div class="graph">
-                  <div class="bar bar6" data-pers="85">
-                  <span>85%</span></div>
-                </div>
-              </li>
-            </ul>
+    <!-- Team Avility -->
+    <section>
+      <div class="container">
+        <div class="title">
+          <h2>Our TeamAvility</h2>
         </div>
-      </section>
-      <!-- // Team Avility -->
+      </div>
+    </section>
+    <!-- // Team Avility -->
 
     <!-- Team Portpolio -->
-    <section id="portfolio">
+    <section id="team-portfolio-section">
       <div class="container">
         <div class="title">
           <h2>Our Portpolio</h2>
         </div>
+
       </div>
     </section>
     <!-- // Team Portpolio -->
   </main>
   <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
