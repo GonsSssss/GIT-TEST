@@ -89,7 +89,7 @@ section:nth-child(2n) {
 }
 
 .kvimgbox {
-  border: 10px solid #2ead96;
+  border: 10px solid #29cfb0;
   position: relative;
   z-index: -1;
   width: 400px;
@@ -117,7 +117,7 @@ section:nth-child(2n) {
 }
 
 .ourteam-imgbox {
-  border: 5px solid #21a48b;
+  border: 10px solid #29cfb0;
   position: relative;
   width: 400px;
   height: 400px;
@@ -143,7 +143,7 @@ section:nth-child(2n) {
 }
 
 .member-face {
-  background-color: #b7ddd3;
+  background-color: #96d1c6;
   position: absolute;
   width: 200px;
   height: 200px;
@@ -160,24 +160,26 @@ section:nth-child(2n) {
   justify-content: center;
   left: 0;
   top: 0;
-  background-color: rgba(104, 104, 104, 0.541);
+  background-color: rgba(87, 87, 87, 0.774);
   border-radius: 50%;
   width: 200px;
   height: 200px;
   color: white;
   font-size: 24px;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: all 0.3s;
 }
 
 .ourteam-face ul li:hover a {
   transform: scale(1);
-  opacity: 1;
 }
 
 /* // Our Team */
 
 /* Team Avility */
 .avility-graphbox {
-  background-color: #97d1c6cc;
+  background-color: #7fcabc;
   border-radius: 5px;
   padding: 2rem;
   width: 1160px;
@@ -185,63 +187,89 @@ section:nth-child(2n) {
 }
 
 .avility-graph {
-  background-color: #69c0b0;
+  background-color: #29cfb0;
 }
 /* // Team Avility */
 
 /* Team Portfolio */
+
 .team-portfolio-imgbox ul {
   display: flex;
 }
 
-.team-portfolio-imgs {
-  text-align: center;
-  border: 1px solid #69c0b0;
-  padding: 15px;
+.team-portfolio-imgbox ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.team-portfolio-imgbox ul li .team-portfolio-imgs {
+  border: 4px solid #29cfb0;
   border-left: transparent;
   border-right: transparent;
-  margin-right: 10px;
-  /* position: relative; */
-  z-index: 5;
-}
-
-.team-portfolio-imgs p {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.portfolio-imghover {
-  /* position: absolute; */
-  background-color: rgba(102, 102, 102, 0.562);
-  color: white;
-  padding: 16px;
-  margin-right: 10px;
-}
-.portfolio-imghover .web-detail {
-  word-break: break-all;
-}
-
-.portfolio-imghover h3 {
+  padding: 20px;
+  margin-right: 5px;
   font-size: 20px;
-  margin-bottom: 16px;
-}
-.portfolio-imghover .web-detail {
-  margin-bottom: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.portfolio-hovertext {
-  font-size: 14px;
+.port-textbox {
+  position: absolute;
+  color: white;
+  background-color: #3d3d3d91;
+  height: 379.02px;
+  padding: 10px;
+  margin-right: 5px;
+  transform: scale(0, 1);
+  transform-origin: center center;
+  transition: all 0.3s;
+}
+
+.port-textbox h3 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.port-textbox .web-detail {
+  word-break: break-all;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+.port-textbox h4 {
+  font-size: 20px;
+}
+
+.port-textbox .portfolio-hovertext {
   margin-bottom: 14px;
 }
 
-.portfolio-imghover button {
-  padding: 10px;
-  border: 1px solid white;
+.port-textbox .textbutton {
+  text-align: center;
+}
+
+.port-textbox .textbutton button {
+  padding: 15px;
+  margin-top: 15px;
+  width: 50%;
+  font-size: 18x;
+  border: 1px solid rgb(207, 207, 207);
   background-color: transparent;
+}
+
+.port-textbox .textbutton a {
   color: white;
 }
-.button {
-  text-align: center;
+
+.team-portfolio-imgbox ul li:hover .port-textbox {
+  transform: scale(1);
+}
+
+.textbutton button:hover {
+  background-color: white;
+}
+
+.textbutton button:hover a {
+  color: black;
 }
 
 /* //Team Portfolio */
