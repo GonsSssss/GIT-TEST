@@ -1,0 +1,11 @@
+선택에 따라 원하는 그림이 나와야함
+switch 구문이 들어간 코드를 밖으로 연결
+
+helper function ?
+내가 자구 사용하고 하고싶은 동작을 담은 함수들이 모여있느 ㄴ파일
+
+helper function 기능을 하는 util.js 파일을 만들어서 원하는 내용을 담는다.
+
+node 의 express 처럼 라우터 기능을 사용하기 위해
+
+npm install react-router-dom 설치
